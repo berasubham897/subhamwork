@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 1</title>
+    <style>
+        *{
+            background-color: lightcyan;
+        }
+        .navbar{
+            background-color: rgb(16, 16, 71);
+            border-radius: 30px;
+            overflow: auto;
+            height: 70px; 
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            background-color: rgb(16, 16, 71);
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white; background-color: rgb(16, 16, 71);
+        }
+        .navbar li a:hover{
+            color: yellow; background-color: rgb(16, 16, 71);
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px; background-color: rgb(16, 16, 71);
+            
+            
+        }
+        .navbar input{
+            border: 2px solid rgb(43, 180, 204);
+            border-radius: 15px;
+            padding: 3px 15px;
+            width: 140px;
+        }
+        .team{
+            margin: 2px auto;
+            padding: 3px;
+            border: 2px solid black;
+            width: 1500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" class="search" placeholder="Search this Website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="team">
+        <h1>Indian T20 XI</h1>
+    </div>
+</body>
+</html>

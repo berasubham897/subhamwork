@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Sweets</title>
+    <style>
+        body {
+
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(https://i.ytimg.com/vi/xyFVRQshwzc/maxresdefault.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 29px auto;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .btn {
+
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(39, 38, 38);
+        }
+
+        .box {
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 40px;
+            width: 33%;
+            height: 400px;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .box h1 {
+            text-align: center;
+        }
+
+        .box button {
+            display: block;
+            width: 65%;
+            margin: 20px auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="https://assets.materialup.com/uploads/86e747d4-08c6-45d5-b843-74ccf2fa7591/attachment.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/desert.html">Deserts Type</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="box">
+        <h1>Try the Best ever Sweets now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+   
+</body>
+
+</html>
