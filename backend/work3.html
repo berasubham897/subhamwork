@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work3</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-image: url("taj.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .bod {
+            background-color: rgba(2, 2, 2, 0.541);
+            position: absolute;
+            height: 233.5vh;
+            width: 100%;
+        }
+
+        .fis {
+            font-size: 3rem;
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            padding: 2px 80px;
+            animation: big 2s ease-in-out 0s infinite forwards;
+        }
+
+        .gap {
+            width: 1500px;
+
+        }
+
+        .about {
+            color: white;
+            font-size: 1.8rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .about1 {
+            color: cyan;
+            font-size: 1.8rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about:hover {
+            color: cyan;
+        }
+
+        .navbar {
+            height: 175px;
+            width: 100%;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+        }
+        /* .travel{
+            display: flex;
+            position: relative;
+            background-image: url("travel.png");
+            height: 200px;
+            width: 200px;
+        } */
+        .welcome {
+            display: flex;
+            color: white;
+            font-size: 2.8rem;
+            align-items: flex-end;
+            justify-content: center;
+            height: 550px;
+            margin-bottom: 25px;
+
+        }
+
+        @keyframes big {
+            from {
+                font-size: 3rem;
+            }
+
+            to {
+                font-size: 5rem;
+            }
+        }
+
+        @keyframes change {
+            0% {
+                content: 'DARJEELING';
+            }
+
+            20% {
+                content: 'MUMBAI';
+            }
+
+            40% {
+                content: 'KOLKATA';
+            }
+
+            60% {
+                content: 'AGRA';
+            }
+
+            80% {
+                content: 'VIZAG';
+            }
+
+            100% {
+                content: 'AMRITSAR';
+            }
+        }
+
+        .dovisit {
+            display: flex;
+            color: white;
+            font-size: 4.2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .area {
+            padding: 0px 25px;
+            display: flex;
+            color: cyan;
+            font-size: 5rem;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .area:before {
+            content: '';
+            animation: change infinite 8s;
+        }
+
+        .comment {
+            display: flex;
+            color: white;
+            font-size: 2.22rem;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+            margin-bottom: 0px;
+        }
+
+        .learn {
+            color: black;
+            font-size: 1.5rem;
+            padding: 8px 40px;
+            margin: 30px;
+            margin-top: 20px;
+            margin-right: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .signup {
+            color: white;
+            font-size: 1.5rem;
+            background-color: rgba(0, 255, 255, 0.575);
+            padding: 8px 40px;
+            margin: 30px;
+            margin-top: 20px;
+            margin-left: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .head {
+            margin-top: 90px;
+            display: flex;
+            position: absolute;
+            flex-direction: row;
+            color: white;
+            font-size: 2.5rem;
+            left: 10px;
+            height: 750px;
+            /* background-color: rgba(0, 0, 255, 0.459); */
+        }
+
+        .tt1 {
+            margin: 20px 100px;
+            height: 700px;
+            width: 550px;
+            /* background-color: rgba(255, 127, 80, 0.555); */
+            display: flex;
+            position: relative;
+            /* justify-content: center; */
+            flex-direction: column;
+        }
+        .det1{
+            display: flex;
+            position: relative;
+            margin-top: 20px;
+        }
+        .det2{
+            display: flex;
+            position: relative;
+            height: 500px;
+            width: 450px;
+            background-image: url("darj.jpg");
+            background-size: cover;
+            margin-top: 20px;
+            /* background-color: rgba(0, 0, 255, 0.315); */
+        }
+        .offer{
+            background: url(/offer.jpg);
+            position:absolute;
+            height: 500px;
+            width: 450px;
+            top: 45px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 20px;
+        }
+        .filter{
+            background-color: rgba(0, 0, 0, 0.404);
+            position: absolute;
+            top: 65px;
+            z-index: 1;
+            height: 500px;
+            width: 450px;
+        }
+        .wow{
+            display: flex;
+            top: 380px;
+            /* left: 40px; */
+            z-index: 2;
+            color: cyan;
+            font-weight: bolder;
+            position: absolute;
+            height: 100px;
+            width: 450px;
+            align-items: center;
+            justify-content: center;
+        }
+        .tour{
+            display: flex;
+            position: relative;
+            width: 250px;
+            padding: 20px;
+            /* background-color: rgba(0, 100, 0, 0.603); */
+            flex-direction: column;
+            /* left: 500px; */
+        }
+        .loc{
+            font-size: 1.5rem;
+        }
+        .place{
+            margin: 15px;
+        }
+        .more{
+            display: flex;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            position: absolute;
+            top: 435px;
+            height: 60px;
+            width: 150px;
+            background-color: rgba(240, 255, 255, 0.603);
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        .more:hover{
+            background-color: rgba(0, 255, 255, 0.356);
+        }
+        .hotel{
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            height: 750px;
+            width: 100%;
+            top: 800px;
+            align-items: center;
+            justify-content: center;
+            /* background-color: rgba(137, 43, 226, 0.473); */
+        }
+        .hot{
+            display: flex;
+            position: relative;
+            /* background-color: rgba(240, 255, 255, 0.514); */
+            height: 700px;
+            width: 600px;
+            margin: 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .trans{
+            display: flex;
+            position: relative;
+            /* background-color: rgba(240, 255, 255, 0.514); */
+            height: 700px;
+            width: 600px;
+            margin: 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .res{
+            display: flex;
+            position: relative;
+            /* background-color: rgba(240, 255, 255, 0.514); */
+            height: 700px;
+            width: 600px;
+            margin: 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .cap{
+            display: flex;
+            position: relative;
+            color: white;
+            font-size: 2.4rem;
+            font-weight: bold;
+            left: 45px;
+        }
+        @keyframes pictu{
+            0%{
+                background-image: url("own-hotel2.jpg");
+            }
+            25%{
+                background-image: url("hotel2.jpg");
+            }
+            50%{
+                background-image: url("hotel3.jpeg");
+            }
+            75%{
+                background-image: url("hotel4.jpg");
+            }
+            100%{
+                background-image: url("hotel5.jpg");
+            }
+        }
+        .pict1{
+            display: flex;
+            position: relative;
+            animation: pictu infinite 8s step-end;
+            left: 45px;
+            height: 600px;
+            width: 500px;
+            border: 3px solid cyan;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes trans{
+            0%{
+                background-image: url("/transpory.jpg");
+            }
+            50%{
+                background-image: url("transpory2.jpg");
+            }
+            100%{
+                background-image: url("transpory3.jpg");
+            }
+        }
+        .pict2{
+            display: flex;
+            position: relative;
+            animation: trans infinite 6s step-end;
+            /* animation: trans 8s ease 1s infinte forward; */
+            left: 45px;
+            height: 600px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 3px solid cyan;
+        }
+        .pict3{
+            display: flex;
+            position: relative;
+            background-image: url("/restr.jpg");
+            left: 45px;
+            height: 600px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 3px solid cyan;
+        }
+        .foot {
+            background-color: rgba(7, 48, 65, 0.562);
+            display: flex;
+            position: absolute;
+            align-items: flex-end;
+            height: 175px;
+            width: 100%;
+            top: 2500px;
+        }
+
+        .image {
+            display: flex;
+            position: absolute;
+            align-items: center;
+            flex-direction: column;
+            left: 800px;
+        }
+
+        .logo2 {
+            margin: 10px;
+            padding: 6px 30px;
+            border-right: 7px solid black;
+        }
+
+        .logo1 {
+            margin: 10px;
+            padding: 6px 30px;
+            border-right: 7px solid black;
+            border-left: 7px solid black;
+        }
+
+        .follow {
+            color: rgba(255, 255, 255, 0.616);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bod">
+        <nav class="navbar">
+            <div class="fis">
+                <table align="left" class="logo">
+                    <tr>
+                        <td>MERA BHARAT</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="gap">
+
+            </div>
+            <div class="sec">
+                <table align="right" cellspacing="90">
+                    <tr>
+                        <td><a href="/work3.html" class="about1">HOME</a></td>
+                        <td><a href="/gallery.html" target="_blank" class="about">GALLERY</a></td>
+                        <td><a href="/about.html" target="_blank" class="about">ABOUT</a></td>
+                        <td><a href="/contact1.html" target="_blank" class="about">CONTACT</a></td>
+                    </tr>
+                </table>
+            </div>
+
+        </nav>
+        <!-- <center>
+            <div class="travel">
+
+            </div>
+        </center> -->
+        <center>
+            <div class="welcome">
+                Welcome To India
+            </div>
+        </center>
+        <center>
+            <div class="dovisit">
+                DO COME & VISIT
+                <div class="area">
+
+                </div>
+
+            </div>
+            <div class="comment">
+                "India once is not enough"
+            </div>
+            <table>
+                <tr>
+                    <td><button class="learn">Learn More</button></td>
+                    <td><button class="signup">Signup Free</button></td>
+                </tr>
+            </table>
+        </center>
+
+        <div class="head">
+            <div class="tt1">
+                Fixed Departure Tour
+                <div class="det1">
+                    <img src="/indiaGate.jpg" alt="" height="500" width="300">
+                    <div class="tour">
+                        <ul class="loc">
+                            <li class="place">DARJEELING</li>
+                            <li class="place">MUMBAI</li>
+                            <li class="place">KOLKATA</li>
+                            <li class="place">AGRA</li>
+                            <li class="place">VIZAG</li>
+                            <li class="place">AMRITSAR</li>
+                        </ul>
+                        <a href="/gallery.html" target="_blank" class="more">Details ></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tt1">Holiday Packages - India
+                <div class="det2">
+                    <div class="wow">Starting at <br> Only 5,999/-</div>
+                </div> 
+            </div>
+            <div class="tt1">Hot Deals
+                <div class="wow">Hurry !<br> BOOK NOW</div>
+                <div class="filter"></div>
+                <div class="offer"></div>
+            </div>
+        </div>
+        <div class="hotel">
+            <div class="hot">
+                <div class="cap">OUR OWN HOTELS</div>
+                <div class="pict1"></div>
+            </div>
+            <div class="trans">
+                <div class="cap">LUXURIOUS CAR</div>
+                <div class="pict2"></div>
+            </div>
+            <div class="res">
+                <div class="cap">TRADITIONAL RESTAURANTS</div>
+                <div class="pict3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+
+        <footer class="image">
+            <div class="follow">
+                <h1>follow us on</h1>
+            </div>
+            <div class="sm">
+                <img src="/logo-facebookpng-32255.png" alt="" height="70" width="70" class="logo1">
+                <img src="/instagram.png" alt="" height="70" width="70" class="logo2">
+                <img src="/twitter.png" alt="" height="70" width="70" class="logo2">
+                <img src="/whatsapp.png" alt="" height="70" width="70" class="logo2">
+                <img src="/youtube.png" alt="" height="70" width="70" class="logo2">
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

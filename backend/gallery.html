@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-image: url("taj.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .bod {
+            background-color: rgba(2, 2, 2, 0.541);
+            position: absolute;
+            height: 310vh;
+            width: 100%;
+
+        }
+
+        @keyframes big {
+            from {
+                font-size: 3rem;
+            }
+
+            to {
+                font-size: 5rem;
+            }
+        }
+
+        .navbar {
+            height: 175px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.15);
+            display: flex;
+            position: absolute;
+        }
+
+        .title {
+            color: cyan;
+            font-size: 3rem;
+            animation: big 2s ease-in-out 0s infinite forwards;
+        }
+
+        .area-1 {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 500px;
+            width: 1800px;
+            top: 200px;
+            left: 20px;
+        }
+
+        .area-3 {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 500px;
+            width: 1800px;
+            top: 1300px;
+            left: 20px;
+        }
+
+        .area-5 {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 500px;
+            width: 1800px;
+            top: 2300px;
+            left: 20px;
+        }
+
+        .area-2 {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 500px;
+            width: 2000px;
+            top: 750px;
+            left: -550px;
+        }
+
+        .area-4 {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 500px;
+            width: 2000px;
+            top: 1850px;
+            left: -550px;
+        }
+        .area-6 {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 500px;
+            width: 2000px;
+            top: 2800px;
+            left: -550px;
+        }
+        .box-1 {
+            display: flex;
+            background-color: rgba(0, 238, 255, 0.479);
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            z-index: 1;
+        }
+
+        .box-2 {
+            display: flex;
+            background-color: rgba(244, 246, 247, 0.479);
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            z-index: 0;
+            top: 20px;
+            left: 20px;
+        }
+
+        .box-1mum {
+            display: flex;
+            background-color: rgba(0, 238, 255, 0.479);
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            z-index: 1;
+            left: 2000px;
+        }
+
+        .box-2mum {
+            display: flex;
+            background-color: rgba(244, 246, 247, 0.479);
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            z-index: 0;
+            top: 20px;
+            left: 2020px;
+        }
+
+        .darj {
+            position: absolute;
+            display: flex;
+            top: 40px;
+            left: 40px;
+            z-index: 2;
+            height: 350px;
+            width: 350px;
+            color: white;
+            flex-direction: column;
+
+        }
+
+        .mum {
+            left: 2040px;
+            position: absolute;
+            display: flex;
+            z-index: 2;
+            top: 40px;
+            flex-direction: column;
+            color: white;
+        }
+
+        .list {
+            position: absolute;
+            display: flex;
+            left: 600px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .listmum {
+            position: absolute;
+            display: flex;
+            left: 600px;
+            width: 1275px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .det {
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="bod">
+        <nav class="navbar">
+            <div class="title">
+                THE HERITAGE INDIA
+            </div>
+        </nav>
+    </div>
+
+    <div class="area-1">
+        <div class="darj">
+            <img src="/darj.jpg" alt="" height="275" width="338" border="2px">
+            <center>
+                <h1>DARJEELING</h1>
+            </center>
+        </div>
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="list">
+            <ul>
+                <li class="det">Darjeeling is a town in India's West Bengal state, in the Himalayan foothills. Once a
+                    summer resort
+                    for the British Raj elite, it remains the terminus of the narrow-gauge Darjeeling Himalayan Railway,
+                    or “Toy Train,” completed in 1881. It's famed for the distinctive black tea grown on plantations
+                    that dot its surrounding slopes. Its backdrop is Mt. Kanchenjunga, among the world’s highest peaks.
+                </li>
+                <li class="det">7 days & 6 night</li>
+                <li class="det">Only Rs. 7,999 /- (per head)</li>
+                <li class="det">Tiger Hill, Batasia Loop, Padmaja Naidu Himalayan Zoological Park, Peace Pagoda, Ghum
+                    Monastery, Rock Garden</li>
+            </ul>
+        </div>
+    </div>
+    <div class="area-2">
+        <div class="listmum">
+            <ul>
+                <li class="det">Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A
+                    financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic
+                    Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island
+                    holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of
+                    the Bollywood film industry.
+                </li>
+                <li class="det">8 days & 7 night</li>
+                <li class="det">Only Rs. 9,999 /- (per head)</li>
+                <li class="det">Marine Drive, Bandra-Worli Sea Link, Gateway of India, Kanheri Caves, Global Vipassana
+                    Pagoda, Shree Siddhivinayak, Nariman Point, Elephanta Caves, Mani Bhaban Gandhi Museum</li>
+            </ul>
+        </div>
+        <div class="mum">
+            <img src="/mumbai.jpg" alt="" height="275" width="338" border="2px">
+            <center>
+                <h1>MUMBAI</h1>
+            </center>
+        </div>
+        <div class="box-1mum"></div>
+        <div class="box-2mum"></div>
+    </div>
+    <div class="area-3">
+        <div class="darj">
+            <img src="/victoria-memorial--kolkata--india-1140726002-95549087f08e4bafb44c1a71179a8ceb.jpg" alt=""
+                height="275" width="338" border="2px">
+            <center>
+                <h1>KOLKATA</h1>
+            </center>
+        </div>
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="list">
+            <ul>
+                <li class="det">Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an
+                    East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today
+                    it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home
+                    to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb
+                    is on site.
+                </li>
+                <li class="det">5 days & 4 night</li>
+                <li class="det">Only Rs. 5,999 /- (per head)</li>
+                <li class="det">Victoria Memorial Hall, St. Paul Cathedral Church, Alipore ZOO, Nicco Park, Eco Park &
+                    MWM, Aquatica, Science City, Indian Museum</li>
+            </ul>
+        </div>
+    </div>
+    <div class="area-4">
+        <div class="listmum">
+            <ul>
+                <li class="det">Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh,
+                    about 210 kilometres south of the national capital New Delhi and 335 km west of the state capital
+                    Lucknow.
+                </li>
+                <li class="det">7 days & 6 night</li>
+                <li class="det">Only Rs. 7,999 /- (per head)</li>
+                <li class="det">Taj Mahal, Agra Fort, Jama Masjid, Fatehpur Sikri, Itmad-Ud-Daulah's Tomb, Akbar's Tomb,
+                    Moti Masjid, Sikandra Fort, Jodha Bai</li>
+            </ul>
+        </div>
+        <div class="mum">
+            <img src="/agra.webp" alt="" height="275" width="338" border="2px">
+            <center>
+                <h1>AGRA</h1>
+            </center>
+        </div>
+        <div class="box-1mum"></div>
+        <div class="box-2mum"></div>
+    </div>
+    <div class="area-5">
+        <div class="darj">
+            <img src="/vizag.webp" alt="" height="275" width="338" border="2px">
+            <center>
+                <h1>VIZAG</h1>
+            </center>
+        </div>
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="list">
+            <ul>
+                <li class="det">Visakhapatnam is a port city and industrial center in the Indian state of Andhra
+                    Pradesh, on the Bay of Bengal. It's known for its many beaches, including Ramakrishna Beach, home to
+                    a preserved submarine at the Kursura Submarine Museum. Nearby are the elaborate Kali Temple and the
+                    Visakha Museum, an old Dutch bungalow housing local maritime and historical exhibits.
+                </li>
+                <li class="det">5 days & 4 night</li>
+                <li class="det">Only Rs. 5,999 /- (per head)</li>
+                <li class="det">Yarada Beach, Katiki Waterfalls, Araku Valley, Kailasagiri, Borra Caves, Submarine
+                    Museum, Indira Gandhi Zoological Park</li>
+            </ul>
+        </div>
+    </div>
+    <div class="area-6">
+        <div class="listmum">
+            <ul>
+                <li class="det">Amritsar is a city in the northwestern Indian state of Punjab, 28 kilometers from the
+                    border with Pakistan. At the center of its walled old town, the gilded Golden Temple (Harmandir
+                    Sahib) is the holiest gurdwara (religious complex) of the Sikh religion. It’s at the end of a
+                    causeway, surrounded by the sacred Amrit Sarovar tank (lake), where pilgrims bathe.
+                </li>
+                <li class="det">9 days & 8 night</li>
+                <li class="det">Only Rs. 10,999 /- (per head)</li>
+                <li class="det">Akal Takht, Wagah Border, Jallianwala Bagh, 
+                    Gobindgarh Fort, Durgiana Temple, 
+                    Partition Museum, Khairuddin Mosque, Thunder Zone Amusement And Water Park, The Golden Temple</li>
+            </ul>
+        </div>
+        <div class="mum">
+            <img src="/golden.jpg" alt="" height="275" width="338" border="2px">
+            <center>
+                <h1>AMRITSAR</h1>
+            </center>
+        </div>
+        <div class="box-1mum"></div>
+        <div class="box-2mum"></div>
+    </div>
+    
+</body>
+
+</html>
